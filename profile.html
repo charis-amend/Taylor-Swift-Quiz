@@ -3,11 +3,93 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>profile</title>
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <header class="header-bar">
-      <p>Profile (taylor's version)/p></p>
+      <p class="header-title">Taylor Swift Quiz</p>
+      <p class="header-subtitle">PROFILE</p>
     </header>
+    <main class="main-content-profile">
+      <section class="profilehead">
+        <img
+          class="profilehead_picture"
+          src="/resources/ts-profilepic.png"
+          alt="a picture of ts"
+        />
+        <h2 class="profilehead_name">Charis Joy Amend</h2>
+      </section>
+      <section class="aboutme-section">
+        <h3 class="aboutme_title">About me</h3>
+        <p class="aboutme-section__descriptiontext">
+          here is a text about me and my love to taylor swift's music. she has
+          been at the forefront of the music industry for more than 17 years. if
+          you would like to go watch the ERAS TOUR movie, you will get a better
+          sense of what she has achieved. If you want to know, my favorite
+          albums are these from most favorite to a little less favorite:
+        </p>
+        <section class="aboutme-section__listoffavalbums">
+          <ol class="aboutme-section-listoffavalbums__ol">
+            <li>folklore</li>
+            <li>evermore</li>
+            <li>1989 (Taylor's Version)</li>
+        </ol>
+      </section>
+      <section class="counter-section">
+      <h3 class="counter-section__stats">Stats</h3>
+      <img
+          class="counter-section-questioncounted__question-icon"
+          src="/resources/question.png"
+          alt="question-icon"
+        />
+        <p class="counter-section__questioncounted">10 Questions</p>
+        <p class="counter-section-bookmarkscounted">4 Bookmarks</p>
+      </section>
+
+      <section class="settings">
+        <h3 class="settings-title">Settings</h3>
+        <section class="dark-mode-area">
+          <label class="settings-darkmode-switchbutton-area">
+            <input type="checkbox" />
+          <span class="settings-darkmode-switchbutton-switch"></span>
+         </label>
+        <p class="settings-darkmode">Dark Mode</p>
+      </section>
+      </section>
+    </main>
+    <footer>
+      <nav class="navbar">
+        <a class="navbar-item" href="/index.html">
+          <img
+            class="navbar-item__img"
+            src="/resources/home_filled.png"
+            alt="homebutton"
+            width="20"
+            height="20"
+          />
+        </a>
+
+        <a class="navbar-item" href="/bookmark.html">
+          <img
+            class="navbar-item__img"
+            src="/resources/bookmark_filled.png"
+            alt="bookmarkpage"
+            width="20"
+            height="20"
+          />
+        </a>
+
+        <a class="navbar-item-active" href="#">
+          <img
+            class="navbar-item__img"
+            src="/resources/profile_filled.png"
+            alt="profilepage"
+            width="20"
+            height="20"
+          />
+        </a>
+      </nav>
+    </footer>
   </body>
 </html>
