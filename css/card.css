@@ -44,11 +44,16 @@
   margin: 15px;
   box-shadow: 2px 4px 5px;
   font-size: var(--heading-medium-black);
+  cursor: pointer;
 }
 
 .question-card_button-answer:hover {
   background-color: var(--button-color-hover);
   color: whitesmoke;
+}
+
+.question-card_button-answer:focus + .question-card__answer {
+  display: block;
 }
 
 .question-card__answer {
@@ -58,4 +63,15 @@
 }
 .question-card__tags-list {
   list-style-type: none;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.question-card__tag-item {
+  background-color: var(--orangebackground);
+  margin: 2px;
+  padding: 5px;
+  border-radius: 10px;
 }

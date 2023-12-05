@@ -29,7 +29,3 @@ body {
   border: 3px;
   background-color: var(--whitebackground);
 }
-
-.question-card {
-  background-color: bisque;
-}
