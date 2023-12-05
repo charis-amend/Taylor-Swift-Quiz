@@ -23,7 +23,19 @@ footer {
   border-radius: 10px;
   gap: 5px;
   border: 1px black;
-  background-color: darksalmon;
+  background-color: var(--salmonbackground);
+  width: 300px;
+  display: flex;
+  justify-content: center;
+}
+
+.navbar-item-active {
+  padding: 10px;
+  margin: 3px;
+  border-radius: 10px;
+  gap: 5px;
+  border: 1px black;
+  background-color: var(--orangebackground);
   width: 300px;
   display: flex;
   justify-content: center;

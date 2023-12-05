@@ -3,11 +3,72 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>bookmark</title>
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <header class="header-bar">
-      <p>Bookmarks (taylor's version)/p></p>
+      <p class="header-title">Taylor Swift Quiz</p>
     </header>
+    <main class="main-content">
+      <section class="all-questioncards-section">
+        <article class="question-card">
+          <button class="question-card__bookmark-button">
+            <img
+              class="question-card-bookmark-button__img"
+              src="/resources/bookmark.png"
+              alt="default-bookmark"
+            />
+          </button>
+          <h2 class="question-card__question">
+            What is Taylor Swift's full name?
+          </h2>
+          <button class="question-card_button-answer" tabindex="0">
+            SHOW ANSWER
+          </button>
+          <p class="question-card__answer">Taylor Alison Swift</p>
+          <section class="question-card__tags-section">
+            <ul class="question-card__tags-list">
+              <li class="question-card__tag-item">#real name</li>
+              <li class="question-card__tag-item">#Alison</li>
+              <li class="question-card__tag-item">#taylors version</li>
+            </ul>
+          </section>
+        </article>
+      </section>
+    </main>
+    <footer>
+      <nav class="navbar">
+        <a class="navbar-item" href="/index.html">
+          <img
+            class="navbar-item__img"
+            src="/resources/home_filled.png"
+            alt="homebutton"
+            width="20"
+            height="20"
+          />
+        </a>
+
+        <a class="navbar-item-active" href="#">
+          <img
+            class="navbar-item__img"
+            src="/resources/bookmark_filled.png"
+            alt="bookmarkpage"
+            width="20"
+            height="20"
+          />
+        </a>
+
+        <a class="navbar-item" href="/profile.html">
+          <img
+            class="navbar-item__img"
+            src="/resources/profile_filled.png"
+            alt="profilepage"
+            width="20"
+            height="20"
+          />
+        </a>
+      </nav>
+    </footer>
   </body>
 </html>
