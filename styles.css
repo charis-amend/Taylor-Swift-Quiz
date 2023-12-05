@@ -17,6 +17,7 @@ body {
 .main-content {
   margin-inline: 10px;
   margin-top: 48px;
+  margin-bottom: 75px; /*height of footer */
   padding: 3px;
   background-color: whitesmoke;
   display: flex;
