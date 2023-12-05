@@ -1,0 +1,28 @@
+:root {
+  /* colors in all of the quiz app */
+  /* backgroundcolors */
+  --salmonbackground: darksalmon;
+  --yellowbackground: blanchedalmond;
+  --whitebackground: whitesmoke;
+  --bisquebackground: bisque;
+  --orangebackground: rgb(228, 183, 100);
+
+  /* buttons and bookmarks styles */
+
+  --button-color-default: rgb(141, 221, 141);
+  --button-color-hover: rgb(33, 83, 33);
+
+  --button-text: black;
+
+  /* text font sizes and colors and styles*/
+  --header-font: 40px whitesmoke;
+  --heading-big-black: 18px black;
+  --heading-medium-black: 14px black;
+  --normal-textblock: 10px black;
+  --tagtextstyle: 10px whitesmoke italic;
+
+  /* header height for main content of each page */
+
+  --header-height: 90px;
+  --gap: 10px;
+}
