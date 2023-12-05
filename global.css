@@ -1,23 +1,15 @@
-/* :root {
+:root {
   /* colors in all of the quiz app */
-  --normal-text-color: black;
-  --textcolor-header-navbar: white;
+  /* backgroundcolors */
+  --salmonbackground: darksalom;
+  --yellowbackground: blanchedalmond;
+  --whitebackground: whitesmoke;
+  --bisquebackground: bisque;
 
-  --heading-big-dark: black;
-  --heading-big-light: white;
-  --heading-medium-dark: black;
-  --heading-medium-light: white;
-
-  --text-descriptive-dark: black;
-  --text-descriptive-light: white;
-
-  /* text font sizes and family */
-  --normal-text-size: 10px;
-  --textsize-header-navbar: 30px;
-  --heading-big-size: 18px;
-  --heading-medium-size: 14px;
-  --textsize-descriptive: 10px italic;
-
-  /* units */
-  --gap: 15px;
-} */
+  /* text font sizes and colors and styles*/
+  --header-font: 30px whitesmoke;
+  --heading-big: 18px black;
+  --heading-medium: 14px black;
+  --normal-textblock: 10px black;
+  --tagtextstyle: 10px whitesmoke italic;
+}

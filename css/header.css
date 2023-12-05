@@ -14,5 +14,5 @@
 .header-title {
   background-color: darksalmon;
   color: azure;
-  font-size: 30px;
+  font-size: --header-fontsize;
 }

@@ -1,0 +1,8 @@
+.question-card {
+  background-color: var(--bisquebackground);
+  border: 3px;
+  margin: 5px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+}
