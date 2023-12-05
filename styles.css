@@ -97,7 +97,7 @@ body {
 }
 
 .aboutme-section-listoffavalbums__ol {
-  background-color: var(--orangebackground);
+  background-color: var(--yellowbackground);
   padding-left: 30px;
 }
 
@@ -115,10 +115,14 @@ body {
   width: 624px;
 }
 
+.counter-section-questioncounted__question-icon {
+  padding: 10px;
+  margin: 3px;
+}
+
 .counter-section__questioncounted {
   margin-top: 5px;
   margin-bottom: 20px;
-  width: 100vw;
 }
 
 .counter-section-bookmarkscounted {
@@ -126,16 +130,26 @@ body {
   width: 100vw;
 }
 
-.settings {
+.settings-title {
   padding: 10px;
   margin: 15px;
   width: 624px;
 }
 
-.settings-darkmode {
-  padding: 10px;
-  margin: 15px;
+.dark-mode-area {
+  padding: 5px;
+  margin: 5px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
   width: 624px;
 }
 .settings-darkmode-switchbutton-area {
+  padding: 10px;
+  margin: 15px;
+}
+
+.settings-darkmode {
+  padding: 5px;
+  margin: 5px;
 }
