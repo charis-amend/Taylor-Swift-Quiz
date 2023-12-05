@@ -1,7 +1,7 @@
 :root {
   /* colors in all of the quiz app */
   --normal-text-color: black;
-  --text-header-navbar: white;
+  --textcolor-header-navbar: white;
 
   --heading-big-dark: black;
   --heading-big-light: white;
@@ -11,7 +11,10 @@
   --text-descriptive-dark: black;
   --text-descriptive-light: white;
 
-
   /* text font sizes and family */
-  --text
+  --normal-text-size: 10px;
+  --textsize-header-navbar: 30px;
+  --heading-big-size: 18px;
+  --heading-medium-size: 14px;
+  --textsize-descriptive: 10px italic;
 }
