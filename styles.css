@@ -16,7 +16,7 @@ body {
 }
 .main-content {
   margin-inline: 10px;
-  margin-top: calc(var(--header-height)+ 80px); /*height of header*/
+  margin-top: calc(var(--header-height) + 20px); /*height of header*/
   margin-bottom: 75px; /*height of footer */
   padding: 3px;
   background-color: var(--whitebackground);
@@ -33,4 +33,48 @@ body {
 .counter-section-questioncounted__question-icon {
   height: 15px;
   width: 15px;
+}
+
+.main-content-profile {
+  margin-inline: 10px;
+  margin-top: calc(var(--header-height) + 30px); /*height of header*/
+  margin-bottom: 75px; /*height of footer */
+  padding: 3px;
+  background-color: var(--whitebackground);
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.profilehead {
+  padding: 20px;
+  margin: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.profilehead-pic {
+  padding: 10px;
+  margin: 10px;
+  height: 90px;
+  width: 90px;
+  border-radius: 100%;
+}
+
+.aboutme-section {
+  padding: 10px;
+  margin: 10px;
+}
+
+.settings {
+  padding: 10px;
+  margin: 5px;
+  border: 3px black;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.settings-darkmode-switchbutton-area {
 }
