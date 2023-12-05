@@ -8,4 +8,27 @@
   margin: 0;
   padding: 0;
   border: 2px black;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: blanchedalmond;
+}
+.main-content {
+  margin-inline: 10px;
+  margin-top: 48px;
+  padding: 3px;
+  background-color: whitesmoke;
+  display: flex;
+  justify-content: center;
+}
+
+.all-questioncards-section {
+  margin: 10px;
+  border: 3px;
+  background-color: whitesmoke;
+}
+
+.question-card {
+  background-color: bisque;
 }

@@ -1,4 +1,4 @@
-:root {
+/* :root {
   /* colors in all of the quiz app */
   --normal-text-color: black;
   --textcolor-header-navbar: white;
@@ -17,4 +17,7 @@
   --heading-big-size: 18px;
   --heading-medium-size: 14px;
   --textsize-descriptive: 10px italic;
-}
+
+  /* units */
+  --gap: 15px;
+} */
