@@ -6,8 +6,6 @@
 
 * {
   margin: 0;
-  padding: 0;
-  border: 2px black;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
@@ -61,6 +59,7 @@ body {
   height: 100px;
   width: 100px;
   align-self: center;
+  object-fit: cover;
   border: 1px;
   border-radius: 100px;
 }
@@ -92,14 +91,11 @@ body {
 
 .aboutme-section-listoffavalbums {
   background-color: var(--yellowbackground);
-  padding-left: 20px;
   margin: 10px;
 }
 
-.aboutme-section-listoffavalbums__ol > li {
+.aboutme-section-listoffavalbums__ol {
   background-color: var(--yellowbackground);
-  margin: 5px;
-  padding: 5px;
 }
 
 .counter-section {
