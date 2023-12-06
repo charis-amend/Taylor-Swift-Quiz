@@ -2,10 +2,11 @@
 @import "https://charis-amend.github.io/charis-quiz-app/css/button.css";
 @import "https://charis-amend.github.io/charis-quiz-app/css/card.css";
 @import "https://charis-amend.github.io/charis-quiz-app/css/header.css";
-@import "https://charis-amend.github.io/charis-quiz-app/css/navbar.css";
+@import "/css/navbar.css";
+@import "/css/profile.css";
 
 * {
-  margin: 0;
+  /* margin: 0; */
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
@@ -26,127 +27,4 @@ body {
   margin: 10px;
   border: 3px;
   background-color: var(--whitebackground);
-}
-
-.counter-section-questioncounted__question-icon {
-  height: 15px;
-  width: 15px;
-}
-
-.main-content-profile {
-  margin-inline: 10px;
-  margin-top: calc(var(--header-height) + 30px); /*height of header*/
-  margin-bottom: 75px; /*height of footer */
-  padding: 3px;
-  background-color: var(--whitebackground);
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-}
-
-.profilehead {
-  padding: 20px;
-  margin: 10px;
-  height: 70px;
-  width: 90vw;
-  display: flex;
-  flex-direction: row;
-}
-
-.profilehead_picture {
-  padding: 10px;
-  margin: 10px;
-  height: 100px;
-  width: 100px;
-  align-self: center;
-  object-fit: cover;
-  border: 1px;
-  border-radius: 100px;
-}
-
-.profilehead_name {
-  padding: 20px;
-  margin: 30px;
-  align-self: center;
-}
-
-.aboutme-section {
-  padding: 10px;
-  margin: 10px;
-  display: flex;
-  justify-content: space-between;
-  flex-direction: column;
-  justify-content: left;
-}
-.aboutme_title {
-  padding: 10px;
-  margin: 15px;
-}
-
-.aboutme-section__descriptiontext {
-  padding: 20px;
-  align-self: center;
-  background-color: var(--yellowbackground);
-}
-
-.aboutme-section-listoffavalbums {
-  background-color: var(--yellowbackground);
-  margin: 10px;
-}
-
-.aboutme-section-listoffavalbums__ol {
-  background-color: var(--yellowbackground);
-}
-
-.counter-section {
-  padding: 10px;
-  margin: 10px;
-  display: flex;
-  flex-direction: column;
-  width: 624px;
-}
-
-.counter-section__stats {
-  padding: 10px;
-  margin: 15px;
-  width: 624px;
-}
-
-.counter-section-questioncounted__question-icon {
-  padding: 10px;
-  margin: 3px;
-}
-
-.counter-section__questioncounted {
-  margin-top: 5px;
-  margin-bottom: 20px;
-}
-
-.counter-section-bookmarkscounted {
-  margin-bottom: 10px;
-  width: 100vw;
-}
-
-.settings-title {
-  padding: 10px;
-  margin: 15px;
-  width: 624px;
-}
-
-.dark-mode-area {
-  padding: 5px;
-  margin: 5px;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  width: 624px;
-}
-.settings-darkmode-switchbutton-area {
-  padding: 10px;
-  margin: 15px;
-}
-
-.settings-darkmode {
-  padding: 5px;
-  margin: 5px;
 }
