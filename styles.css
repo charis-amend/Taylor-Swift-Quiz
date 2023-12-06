@@ -1,8 +1,8 @@
-@import "/global.css";
-@import "/css/button.css";
-@import "/css/card.css";
-@import "/css/header.css";
-@import "/css/navbar.css";
+@import "./global.css";
+@import "./css/button.css";
+@import "./css/card.css";
+@import "./css/header.css";
+@import "./css/navbar.css";
 
 * {
   margin: 0;
