@@ -1,6 +1,7 @@
 .question-card {
   background-color: var(--bisquebackground);
   border: 3px;
+  border-radius: 20px;
   margin: 25px;
   padding: 10px;
   width: 80vw;
