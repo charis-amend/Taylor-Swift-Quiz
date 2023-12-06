@@ -5,8 +5,6 @@
 @import "https://charis-amend.github.io/charis-quiz-app/css/navbar.css";
 
 * {
-  margin: 0;
-  padding: 0;
   border: 2px black;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
@@ -85,21 +83,24 @@ body {
 }
 
 .aboutme-section__descriptiontext {
-  padding: 10px;
-  margin: 10px;
+  padding: 20px;
   align-self: center;
   background-color: var(--yellowbackground);
 }
 
-.aboutme-section__listoffavalbums {
-  padding: 5px;
-  margin: 20px;
-}
-
-.aboutme-section-listoffavalbums__ol {
+.aboutme-section-listoffavalbums {
   background-color: var(--yellowbackground);
   padding-left: 30px;
+  margin: 10px;
+  padding-block: 20px;
 }
+
+/* .aboutme-section-listoffavalbums__ol {
+  background-color: var(--yellowbackground);
+  padding-left: 30px;
+  margin: 10px;
+  padding-block: 20px;
+} */
 
 .counter-section {
   padding: 10px;
