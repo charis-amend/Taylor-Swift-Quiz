@@ -94,14 +94,13 @@ body {
   background-color: var(--yellowbackground);
   padding-left: 20px;
   margin: 10px;
-  padding-block: 20px;
 }
 
-/* .aboutme-section-listoffavalbums__ol > li {
+.aboutme-section-listoffavalbums__ol > li {
   background-color: var(--yellowbackground);
   margin: 5px;
   padding: 5px;
-} */
+}
 
 .counter-section {
   padding: 10px;
