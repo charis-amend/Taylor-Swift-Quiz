@@ -1,8 +1,8 @@
-@import "global.css";
-@import "/css/button.css";
-@import "/css/card.css";
-@import "/css/header.css";
-@import "/css/navbar.css";
+@import "https://charis-amend.github.io/charis-quiz-app/global.css";
+@import "https://charis-amend.github.io/charis-quiz-app/css/button.css";
+@import "https://charis-amend.github.io/charis-quiz-app/css/card.css";
+@import "https://charis-amend.github.io/charis-quiz-app/css/header.css";
+@import "https://charis-amend.github.io/charis-quiz-app/css/navbar.css";
 
 * {
   margin: 0;
