@@ -1,28 +1,25 @@
 :root {
   /* colors in all of the quiz app */
   /* backgroundcolors */
-  --salmonbackground: darksalmon;
-  --yellowbackground: blanchedalmond;
-  --whitebackground: whitesmoke;
-  --bisquebackground: bisque;
-  --orangebackground: rgb(228, 183, 100);
+  --primarycolorlila: rgb(205, 180, 219);
+  --secondcolorlightpink: rgb(255, 200, 221);
+  --thirdcolorpink: rgb(255, 175, 204);
+  --firstinteractivecolorlightblue: rgb(189, 224, 254);
+  --secondinteractivecolorstrongblue: rgb(162, 210, 255);
 
   /* buttons and bookmarks styles */
-
-  --button-color-default: rgb(141, 221, 141);
-  --button-color-hover: rgb(33, 83, 33);
-
-  --button-text: black;
+  --button-color-default: var(--secondinteractivecolorstrongblue);
+  --button-color-hover: var(--firstinteractivecolorlightblue);
+  --button-text: rgb(111, 96, 120);
 
   /* text font sizes and colors and styles*/
-  --header-font: 40px whitesmoke;
-  --heading-big-black: 18px black;
-  --heading-medium-black: 14px black;
-  --normal-textblock: 10px black;
-  --tagtextstyle: 10px whitesmoke italic;
+  --heading-big-black: 20px rgb(69, 69, 69);
+  --heading-medium-black: 14px rgb(69, 69, 69);
+  --normal-textblock: 10px rgb(69, 69, 69);
+  --tagtextstyle: 10px whitesmoke;
 
-  /* header height for main content of each page */
-
+  /* measurements for main content of each page */
   --header-height: 60px;
+  --footer-height: 75px;
   --gap: 10px;
 }

@@ -1,5 +1,5 @@
 .question-card {
-  background-color: var(--bisquebackground);
+  background-color: var(--secondcolorlightpink);
   border: 3px;
   border-radius: 20px;
   margin: 25px;
@@ -11,8 +11,21 @@
   box-shadow: 1px 1px 5px;
 }
 
+.question-card:hover {
+  background-color: var(--thirdcolorpink);
+  border: 3px;
+  border-radius: 20px;
+  margin: 25px;
+  padding: 10px;
+  width: 80vw;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  box-shadow: 2px 2px 8px;
+}
+
 .question-card__bookmark-button {
-  background-color: var(--salmonbackground);
+  background-color: var(--secondinteractivecolorstrongblue);
   margin: 1px;
   padding: 2px;
   position: absolute;
@@ -20,6 +33,17 @@
   right: 10px;
   transform: translate (0%, -50%);
   box-shadow: 1px 1px 3px;
+}
+
+.question-card__bookmark-button:hover {
+  background-color: var(--firstinteractivecolorlightblue);
+  margin: 1px;
+  padding: 2px;
+  position: absolute;
+  top: -20px;
+  right: 10px;
+  transform: translate (0%, -50%);
+  box-shadow: 3px 3px 3px;
 }
 
 .question-card-bookmark-button__img {
@@ -39,6 +63,7 @@
 
 .question-card_button-answer {
   background-color: var(--button-color-default);
+  color: var(--button-text);
   border-radius: 25px;
   border-color: var(--button-color-hover);
   border: 3px;
@@ -53,7 +78,7 @@
 
 .question-card_button-answer:hover {
   background-color: var(--button-color-hover);
-  color: whitesmoke;
+  color: var(--button-text);
 }
 
 .question-card_button-answer:focus + .question-card__answer {
@@ -75,7 +100,7 @@
 }
 
 .question-card__tag-item {
-  background-color: var(--orangebackground);
+  background-color: var(--secondinteractivecolorstrongblue);
   margin: 2px;
   padding: 5px;
   border-radius: 10px;

@@ -7,18 +7,18 @@
 * {
   margin: 0;
   padding: 0px;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Segoe UI", Tahoma, Verdana, sans-serif;
 }
 
 body {
-  background-color: var(--yellowbackground);
+  background-color: var(--thirdcolorpink);
 }
 .main-content {
   margin-inline: 10px;
   margin-top: calc(var(--header-height) + 20px); /*height of header*/
-  margin-bottom: 75px; /*height of footer */
+  margin-bottom: var(--footer-height); /*height of footer */
   padding: 3px;
-  background-color: var(--whitebackground);
+  background-color: var(--thirdcolorpink);
   display: flex;
   justify-content: center;
 }
@@ -26,25 +26,25 @@ body {
 .all-questioncards-section {
   margin: 10px;
   border: 3px;
-  background-color: var(--whitebackground);
+  background-color: var(--secondcolorlightpink);
 }
 
 .main-content-profile {
   margin-inline: 10px;
   margin-top: calc(var(--header-height) + 30px); /*height of header*/
-  margin-bottom: 75px; /*height of footer */
+  margin-bottom: var(--footer-height); /*height of footer */
   padding: 3px;
-  background-color: var(--whitebackground);
+  background-color: var(--secondcolorlightpink);
   display: flex;
   justify-content: center;
   flex-direction: column;
 }
 
 .profilehead {
+  background-color: var(--thirdcolorpink);
   padding: 20px;
   margin: 10px;
-  height: 70px;
-  width: 90vw;
+  height: 80px;
   display: flex;
   flex-direction: row;
 }
@@ -67,7 +67,8 @@ body {
 }
 
 .aboutme-section {
-  padding: 10px;
+  background-color: var(--thirdcolorpink);
+  padding: 20px;
   margin: 10px;
   display: flex;
   align-items: space-between;
@@ -75,6 +76,7 @@ body {
   justify-content: left;
   position: relative;
   gap: 10px;
+  box-shadow: 2px 2px 2px 2px;
 }
 
 .aboutme_title {
@@ -85,90 +87,83 @@ body {
 .aboutme-section__descriptiontext {
   padding: 20px;
   align-self: center;
-  background-color: var(--yellowbackground);
+  background-color: var(--secondcolorlightpink);
 }
 
 .aboutme-section__listoffavalbums {
-  background-color: var(--yellowbackground);
-  padding-left: 10px;
+  background-color: var(--secondcolorlightpink);
+  padding-left: 20px;
+  padding: 20px;
 }
 
 .aboutme-section-listoffavalbums__ol {
-  background-color: var(--yellowbackground);
+  background-color: var(--secondcolorlightpink);
   margin: 10px;
   padding-left: 20px;
 }
 
-.counter-section {
-  padding: 10px;
+.stats-section,
+.settings-section {
+  background-color: var(--thirdcolorpink);
+  padding: 20px;
   margin: 10px;
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: left;
+  align-items: space-between;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  gap: 10px;
+  box-shadow: 2px 2px 2px 2px;
 }
 
-.counter-section__stats {
+.stats-section__stats-heading,
+.settings-title {
   padding: 10px;
   margin: 15px;
   width: 100vw;
 }
 
-.counter-section-questioncounted__question-icon {
+.stats-section__questionsection,
+.stats-section__bookmarksection,
+.settings-section__darkmode-section {
+  padding: 20px;
+  background-color: var(--secondcolorlightpink);
+  display: flex;
+}
+
+.stats-section-questionsection__qicon,
+.stats-section-bookmarksection__bicon {
+  background-color: var(--secondcolorlightpink);
   padding: 10px;
   margin: 3px;
-  height: 15px;
-  width: 15px;
-  display: flex;
-  align-content: flex-start;
+  height: 20px;
+  width: 20px;
 }
 
-.counter-section__questioncounted {
+.stats-section-questionsection__text,
+.stats-section-bookmarksection__text,
+.settings-darkmode__text {
   margin: 10px;
   width: 900px;
+  align-self: center;
 }
 
-.counter-section-questioncounted__bookmark-icon {
-  padding: 10px;
-  margin: 3px;
-  height: 15px;
-  width: 15px;
-}
-
-.counter-section-bookmarkscounted {
-  margin: 10px;
-  width: 900px;
-}
-
-.settings-title {
-  padding: 10px;
-  margin: 15px;
-  width: 624px;
-}
-
-.settings {
-  padding: 10px;
-  margin: 10px;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  width: 624px;
-}
-
-.dark-mode-area {
+.settings-darkmode-switchbutton__area {
   padding: 5px;
   margin: 5px;
   display: flex;
-  flex-direction: row;
-  align-items: center;
-  width: 624px;
 }
-.settings-darkmode-switchbutton-area {
+
+.settings-darkmode-switchbutton__switch {
+  height: 20px;
+  width: 20px;
   padding: 5px;
   margin: 5px;
 }
 
-.settings-darkmode {
+.settings-darkmode-switchbutton__span {
+  height: 20px;
+  width: 20px;
   padding: 5px;
   margin: 5px;
 }
