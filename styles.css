@@ -105,13 +105,13 @@ body {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  width: 624px;
+  justify-content: left;
 }
 
 .counter-section__stats {
   padding: 10px;
   margin: 15px;
-  width: 624px;
+  width: 100vw;
 }
 
 .counter-section-questioncounted__question-icon {
@@ -119,17 +119,25 @@ body {
   margin: 3px;
   height: 15px;
   width: 15px;
+  display: flex;
+  align-content: flex-start;
 }
 
 .counter-section__questioncounted {
-  margin: 5px;
-  align-self: center;
-  width: 200px;
+  margin: 10px;
+  width: 900px;
+}
+
+.counter-section-questioncounted__bookmark-icon {
+  padding: 10px;
+  margin: 3px;
+  height: 15px;
+  width: 15px;
 }
 
 .counter-section-bookmarkscounted {
   margin: 10px;
-  width: 100vw;
+  width: 900px;
 }
 
 .settings-title {
