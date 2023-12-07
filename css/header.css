@@ -1,7 +1,7 @@
 /* header on index on bookmark and profile page */
 
 .header-bar {
-  background-color: darksalmon;
+  background-color: var(--primarycolorlila);
   top: 0;
   width: 100%;
   height: var(--header-height);
@@ -16,15 +16,15 @@
 }
 
 .header-title {
-  background-color: darksalmon;
-  color: azure;
-  font-size: var(--header-font);
+  color: gray;
+  font-size: 30px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   align-self: center;
 }
 
 .header-subtitle {
-  background-color: darksalmon;
-  color: azure;
-  font-size: 2px white;
+  color: gray;
+  font-size: 15px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   align-self: center;
 }

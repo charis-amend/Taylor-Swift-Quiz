@@ -1,5 +1,5 @@
 footer {
-  background-color: darksalmon;
+  background-color: var(--primarycolorlila);
   margin: auto;
   position: fixed;
   bottom: 0;
@@ -8,7 +8,7 @@ footer {
 }
 
 .navbar {
-  background-color: blanchedalmond;
+  background-color: var(--primarycolorlila);
   margin: 5px;
   padding: 5px;
   z-index: 4;
@@ -23,7 +23,7 @@ footer {
   border-radius: 10px;
   gap: 5px;
   border: 1px black;
-  background-color: var(--salmonbackground);
+  background-color: var(--secondinteractivecolorstrongblue);
   width: 300px;
   display: flex;
   justify-content: center;
@@ -35,7 +35,20 @@ footer {
   border-radius: 10px;
   gap: 5px;
   border: 1px black;
-  background-color: var(--orangebackground);
+  background-color: var(--firstinteractivecolorlightblue);
+  width: 300px;
+  display: flex;
+  justify-content: center;
+  box-shadow: 2px 2px 2px black;
+}
+
+.navbar-item:hover {
+  padding: 10px;
+  margin: 3px;
+  border-radius: 10px;
+  gap: 5px;
+  border: 1px black;
+  background-color: var(--firstinteractivecolorlightblue);
   width: 300px;
   display: flex;
   justify-content: center;
