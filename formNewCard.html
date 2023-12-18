@@ -14,35 +14,83 @@
     </header>
     <main class="main-content-forms">
       <section class="lifted-shadow-section-newforms">
-            <form aria-labelledby="header-subtitle">
-                <fieldset class="forms-fieldset">
-                  <legend class="forms__your-question-instruction">Add a new Question about Taylor Swift here:</legend>
-                    <label for="forms__question-input" 
-                        class="forms__question-text">Your Question</label>
-                    <input type="text" 
-                        name="forms__question-input" 
-                        id="question-input" 
-                        class="forms__question-input" 
-                        data-js="question-input-js" />
-                  <label for="forms__answer-input" 
-                        class="forms__answer-text">Your Answer</label>
-                    <input type="text" 
-                        name="forms__answer-input" 
-                        id="answer-input" 
-                        class="forms__answer-input"
-                        data-js="answer-input-js"/>
-                  <label for="forms__tag-input" 
-                        class="forms__tag-text" >You can put one tag here:</label>
-                     <input type="text" 
-                        name="forms__tag-input" 
-                        id="tag-input"
-                        class="forms__tag-input"
-                        data-js="tag-input-js" />
-                    </fieldset>
-                <input type="submit" value="Add Question" 
-                class="submit-button"
-                data-js="forms-submit-button">
-            </form>
+        <form aria-labelledby="header-subtitle" data-js="formNewCard">
+          <fieldset class="forms-fieldset">
+            <legend class="forms__your-question-instruction">
+              Add a new Question about Taylor Swift here:
+            </legend>
+            <label for="forms__question-input" class="forms__text-for-input"
+              >Your Question</label
+            >
+            <input
+              type="text"
+              name="forms__question-input"
+              id="question-input"
+              class="forms__input-field"
+              data-js="question-input-js" />
+            <label for="forms__answer-input" class="forms__text-for-input"
+              >Your Answer</label
+            >
+            <input
+              type="text"
+              name="forms__answer-input"
+              id="answer-input"
+              class="forms__input-field"
+              data-js="answer-input-js" />
+            <label for="forms__tag-input" class="forms__text-for-input"
+              >You can put one tag here:</label
+            >
+            <input
+              type="text"
+              name="forms__tag-input"
+              id="tag-input"
+              class="forms__input-field"
+              data-js="tag-input-js" />
+          </fieldset>
+          <input
+            type="submit"
+            value="Add Question"
+            class="submit-button"
+            data-js="forms-submit-button" />
+        </form>
+      </section>
+      <section
+        class="newCreatedQuestionsSection"
+        data-js="newCreatedQuestionsSection">
+        <article class="question-card">
+          <h2 class="question-card__question">
+            What is Taylor Swift's full name?
+          </h2>
+          <button
+            class="question-card__bookmark-button"
+            data-js="question-card-bookmark-button">
+            <img
+              class="question-card-bookmark-button__img"
+              data-js="question-card-bookmark-picture"
+              src="./resources/bookmark_unfilled.png"
+              alt="unfilled-bookmark-pic" />
+          </button>
+
+          <button
+            class="question-card_button-answer"
+            data-js="question-card-button">
+            SHOW ANSWER
+          </button>
+          <p
+            class="question-card__answer"
+            data-js="question-card-answer"
+            hidden>
+            Taylor Alison Swift
+          </p>
+          <section class="question-card__tags-section">
+            <ul class="question-card__tags-list">
+              <li class="question-card__tag-item">#real name</li>
+              <li class="question-card__tag-item">#Alison</li>
+              <li class="question-card__tag-item">#taylors version</li>
+            </ul>
+          </section>
+        </article>
+      </section>
     </main>
     <footer>
       <nav class="navbar">
@@ -65,13 +113,13 @@
         </a>
 
         <a class="navbar-item-active" href="#">
-            <img
-              class="navbar-item__img"
-              src="./resources/plus-icon.png"
-              alt="formpage"
-              width="20"
-              height="20" />
-          </a>
+          <img
+            class="navbar-item__img"
+            src="./resources/plus-icon.png"
+            alt="formpage"
+            width="20"
+            height="20" />
+        </a>
 
         <a class="navbar-item" href="./profile.html">
           <img
@@ -82,7 +130,6 @@
             height="20" />
         </a>
       </nav>
-      
     </footer>
   </body>
 </html>
