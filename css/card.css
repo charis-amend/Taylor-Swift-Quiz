@@ -59,6 +59,7 @@
   margin-bottom: 15px;
   padding: 5px;
   justify-self: left;
+  display: flex;
 }
 
 .question-card_button-answer {
@@ -73,7 +74,7 @@
   margin: 15px;
   box-shadow: 2px 4px 5px;
   font-size: var(--heading-medium-black);
-  cursor: pointer;
+  /* cursor: pointer; */
 }
 
 .question-card_button-answer:hover {
@@ -81,15 +82,29 @@
   color: var(--button-text);
 }
 
-.question-card_button-answer:focus + .question-card__answer {
+/* .question-card_button-answer:focus + .question-card__answer {
   display: block;
-}
+} */
 
 .question-card__answer {
   align-self: center;
   font-size: var(--normal-textblock);
-  display: none;
 }
+/* 
+/* js reference to show answer when button is clicked */
+/* .question-card__answer-showing {
+  align-self: center;
+  font-size: var(--normal-textblock);
+  display: block;
+}
+/* js reference to hide answer when button is clicked */
+
+/*.question-card__answer-hiding {
+  align-self: center;
+  font-size: var(--normal-textblock);
+  display: none;
+} */
+
 .question-card__tags-list {
   list-style-type: none;
   display: flex;
