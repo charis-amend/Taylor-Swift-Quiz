@@ -10,18 +10,23 @@
   <body>
     <header class="header-bar">
       <p class="header-title">Taylor Swift Quiz</p>
-      <p class="header-subtitle">ADD NEW QUESTION</p>
+      <p class="header-subtitle">ADD A NEW QUESTION</p>
     </header>
-    <main class="main-content-profile">
-      <section class="profilehead">
-        <img
-          class="profilehead_picture"
-          src="./resources/ts-profilepic.png"
-          alt="a picture of ts" />
-        <h2 class="profilehead_name">Charis Joy Amend</h2>
-      </section>
-      <section class="aboutme-section">
-        <h3 class="aboutme_title">About me</h3>
+    <main class="main-content-forms">
+      <section class="lifted-shadow-section-newforms">
+            <form aria-labelledby="header-subtitle">
+                  <legend class="forms__your-question-instruction">Add a new Question about Taylor Swift here:</legend>
+                    <label for="forms__question-input" class="forms__question-text">Your Question</label>
+                    <input type="text" name="forms__question-input" id="question-input" class="forms__question-text" data-js="question-input-js" />
+                  <label for="forms__answer-input" class="forms__answer-text">Your Answer</label>
+                    <input type="text" name="forms__answer-input" id="answer-input" />
+                  <label for="forms__tag-input" class="forms__tag" >You can put one tag here:</label>
+                     <input type="text" name="forms__tag-input" id="tag-input" />
+                
+        </form>
+        
+
+        <h4 class="forms__new-question-instruction">Add a new Question about Taylor Swift here:</h4>
         <p class="aboutme-section__descriptiontext">
           here is a text about me and my love to taylor swift's music. she has
           been at the forefront of the music industry for more than 17 years. if
@@ -29,46 +34,10 @@
           sense of what she has achieved. If you want to know, my favorite
           albums are these from most favorite to a little less favorite:
         </p>
-        <section class="aboutme-section__listoffavalbums">
-          <ol class="aboutme-section-listoffavalbums__ol">
-            <li>folklore</li>
-            <li>evermore</li>
-            <li>1989 (Taylor's Version)</li>
-          </ol>
-        </section>
-      </section>
-      <section class="stats-section">
-        <h3 class="stats-section__stats-heading">Stats</h3>
-        <div class="stats-section__questionsection">
-          <img
-            class="stats-section-questionsection__qicon"
-            src="./resources/question.png"
-            alt="question-icon" />
-          <p class="stats-section-questionsection__text">10 Questions</p>
-        </div>
+        
 
-        <div class="stats-section__bookmarksection">
-          <img
-            class="stats-section-bookmarksection__bicon"
-            src="./resources/bookmark_transparent.png"
-            alt="bookmark-icon" />
-          <p class="stats-section-bookmarksection__text">4 Bookmarks</p>
-        </div>
-      </section>
-
-      <section class="settings-section">
-        <h3 class="settings-title">Settings</h3>
-        <section class="settings-section__darkmode-section">
-          <label
-            class="settings-darkmode-switchbutton__area"
-            input
-            type="switch"></label>
-          <span class="settings-darkmode-switchbutton__span"></span>
-
-          <p class="settings-darkmode__text">Dark Mode</p>
-        </section>
-      </section>
     </main>
+    
     <footer>
       <nav class="navbar">
         <a class="navbar-item" href="./index.html">
@@ -90,6 +59,15 @@
         </a>
 
         <a class="navbar-item-active" href="#">
+            <img
+              class="navbar-item__img"
+              src="./resources/plus-icon.png"
+              alt="formpage"
+              width="20"
+              height="20" />
+          </a>
+
+        <a class="navbar-item" href="./profile.html">
           <img
             class="navbar-item__img"
             src="./resources/profile_filled.png"
@@ -98,6 +76,7 @@
             height="20" />
         </a>
       </nav>
+      
     </footer>
   </body>
 </html>
