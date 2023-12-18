@@ -1,48 +1,13 @@
-@import "./global.css";
-@import "./css/button.css";
-@import "./css/card.css";
-@import "./css/header.css";
-@import "./css/navbar.css";
-@import "./css/profile.css";
-@import "./css/forms.css";
-
-* {
-  margin: 0;
-  padding: 0px;
-  font-family: "Segoe UI", Tahoma, Verdana, sans-serif;
-}
-
-body {
-  background-color: var(--thirdcolorpink);
-}
-.main-content {
-  margin-inline: 10px;
-  margin-top: calc(var(--header-height) + 20px); /*height of header*/
-  margin-bottom: var(--footer-height); /*height of footer */
-  padding: 3px;
-  background-color: var(--thirdcolorpink);
-  display: flex;
-  justify-content: center;
-}
-
-.all-questioncards-section {
-  margin: 10px;
-  border: 3px;
-  background-color: var(--secondcolorlightpink);
-}
-/* 
 .main-content-profile {
   margin-inline: 10px;
   margin-top: calc(var(--header-height) + 30px); /*height of header*/
-/*
   margin-bottom: var(--footer-height); /*height of footer */
-/*
   padding: 3px;
   background-color: var(--secondcolorlightpink);
   display: flex;
   justify-content: center;
   flex-direction: column;
-  }
+}
 
 .profilehead {
   background-color: var(--thirdcolorpink);
@@ -170,5 +135,4 @@ body {
   width: 20px;
   padding: 5px;
   margin: 5px;
-} 
-*/
+}

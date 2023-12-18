@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="./styles.css" />
+    <script src="./js/index.js" defer></script>
   </head>
   <body>
     <header class="header-bar">
@@ -13,20 +14,30 @@
     <main class="main-content">
       <section class="all-questioncards-section">
         <article class="question-card">
-          <button class="question-card__bookmark-button">
-            <img
-              class="question-card-bookmark-button__img"
-              src="./resources/bookmark.png"
-              alt="default-bookmark"
-            />
-          </button>
           <h2 class="question-card__question">
             What is Taylor Swift's full name?
           </h2>
-          <button class="question-card_button-answer" tabindex="0">
+          <button
+            class="question-card__bookmark-button"
+            data-js="question-card-bookmark-button">
+            <img
+              class="question-card-bookmark-button__img"
+              data-js="question-card-bookmark-picture"
+              src="./resources/bookmark_unfilled.png"
+              alt="unfilled-bookmark-pic" />
+          </button>
+
+          <button
+            class="question-card_button-answer"
+            data-js="question-card-button">
             SHOW ANSWER
           </button>
-          <p class="question-card__answer">Taylor Alison Swift</p>
+          <p
+            class="question-card__answer"
+            data-js="question-card-answer"
+            hidden>
+            Taylor Alison Swift
+          </p>
           <section class="question-card__tags-section">
             <ul class="question-card__tags-list">
               <li class="question-card__tag-item">#real name</li>
@@ -41,8 +52,7 @@
             <img
               class="question-card-bookmark-button__img"
               src="./resources/bookmark_filled.png"
-              alt="default-bookmark"
-            />
+              alt="default-bookmark" />
           </button>
           <h2 class="question-card__question">
             In which year did Taylor Swift release her debut self-titled album?
@@ -66,8 +76,7 @@
             <img
               class="question-card-bookmark-button__img"
               src="./resources/bookmark.png"
-              alt="default-bookmark"
-            />
+              alt="default-bookmark" />
           </button>
           <h2 class="question-card__question">
             Which album features the hit songs "Love Story" and "You Belong with
@@ -92,8 +101,7 @@
             <img
               class="question-card-bookmark-button__img"
               src="./resources/bookmark.png"
-              alt="default-bookmark"
-            />
+              alt="default-bookmark" />
           </button>
           <h2 class="question-card__question">
             Taylor Swift is known for writing songs about her personal
@@ -118,8 +126,7 @@
             <img
               class="question-card-bookmark-button__img"
               src="./resources/bookmark.png"
-              alt="default-bookmark"
-            />
+              alt="default-bookmark" />
           </button>
           <h2 class="question-card__question">
             What is the name of Taylor Swift's documentary that was released on
@@ -143,8 +150,7 @@
             <img
               class="question-card-bookmark-button__img"
               src="./resources/bookmark_filled.png"
-              alt="default-bookmark"
-            />
+              alt="default-bookmark" />
           </button>
           <h2 class="question-card__question">
             Which album marked Taylor Swift's transition from country music to
@@ -168,8 +174,7 @@
             <img
               class="question-card-bookmark-button__img"
               src="./resources/bookmark.png"
-              alt="default-bookmark"
-            />
+              alt="default-bookmark" />
           </button>
           <h2 class="question-card__question">
             Taylor Swift won the Grammy Award for Album of the Year in 2010 for
@@ -193,8 +198,7 @@
             <img
               class="question-card-bookmark-button__img"
               src="./resources/bookmark_filled.png"
-              alt="default-bookmark"
-            />
+              alt="default-bookmark" />
           </button>
           <h2 class="question-card__question">
             What is the title of Taylor Swift's 2020 surprise album released
@@ -219,8 +223,7 @@
             <img
               class="question-card-bookmark-button__img"
               src="./resources/bookmark.png"
-              alt="default-bookmark"
-            />
+              alt="default-bookmark" />
           </button>
           <h2 class="question-card__question">
             Which song includes the famous line "Shake it off"?
@@ -242,8 +245,7 @@
             <img
               class="question-card-bookmark-button__img"
               src="./resources/bookmark_filled.png"
-              alt="default-bookmark"
-            />
+              alt="default-bookmark" />
           </button>
           <h2 class="question-card__question">
             In 2020, Taylor Swift released a sister album to "folklore." What is
@@ -270,8 +272,7 @@
             src="./resources/home_filled.png"
             alt="homebutton"
             width="20"
-            height="20"
-          />
+            height="20" />
         </a>
 
         <a class="navbar-item" href="./bookmark.html">
@@ -280,8 +281,7 @@
             src="./resources/bookmark_filled.png"
             alt="bookmarkpage"
             width="20"
-            height="20"
-          />
+            height="20" />
         </a>
 
         <a class="navbar-item" href="./profile.html">
@@ -290,8 +290,7 @@
             src="./resources/profile_filled.png"
             alt="profilepage"
             width="20"
-            height="20"
-          />
+            height="20" />
         </a>
       </nav>
     </footer>
