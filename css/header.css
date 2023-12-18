@@ -1,0 +1,30 @@
+/* header on index on bookmark and profile page */
+
+.header-bar {
+  background-color: var(--primarycolorlila);
+  top: 0;
+  width: 100%;
+  height: var(--header-height);
+  position: fixed;
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+  justify-content: center;
+  padding: 10px;
+  box-shadow: 0px 10px 20px black;
+  z-index: 5;
+}
+
+.header-title {
+  color: gray;
+  font-size: 30px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  align-self: center;
+}
+
+.header-subtitle {
+  color: gray;
+  font-size: 15px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  align-self: center;
+}

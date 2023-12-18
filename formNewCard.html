@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>forms new question-card page</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <script src="./js/forms.js" defer></script>
+  </head>
+  <body>
+    <header class="header-bar">
+      <p class="header-title">Taylor Swift Quiz</p>
+      <p class="header-subtitle">ADD A NEW QUESTION</p>
+    </header>
+    <main class="main-content-forms">
+      <section class="lifted-shadow-section-newforms">
+        <form aria-labelledby="header-subtitle" data-js="formNewCard">
+          <fieldset class="forms-fieldset">
+            <legend class="forms__your-question-instruction">
+              Add a new Question about Taylor Swift here:
+            </legend>
+            <label for="forms__question-input" class="forms__text-for-input"
+              >Your Question</label
+            >
+            <input
+              type="text"
+              name="forms__questionInput"
+              id="question-input"
+              class="forms__input-field"
+              data-js="question-input-js" />
+
+            <p class="characters-left-text">
+              <span data-js="question-characters-left">50</span> characters are
+              left for your question.
+            </p>
+
+            <label for="forms__answer-input" class="forms__text-for-input"
+              >Your Answer</label
+            >
+            <input
+              type="text"
+              name="forms__answerInput"
+              id="answer-input"
+              class="forms__input-field"
+              data-js="answer-input-js" />
+
+            <p class="characters-left-text">
+              <span data-js="answer-characters-left">30</span> characters are
+              left for your answer.
+            </p>
+
+            <label for="forms__tag-input" class="forms__text-for-input"
+              >You can put one tag here:</label
+            >
+            <input
+              type="text"
+              name="forms__tagInput"
+              id="tag-input"
+              class="forms__input-field"
+              data-js="tag-input-js" />
+          </fieldset>
+          <input
+            type="submit"
+            value="Add Question"
+            class="submit-button"
+            data-js="forms-submit-button" />
+        </form>
+      </section>
+      <section
+        class="newCreatedQuestionsSection"
+        data-js="newCreatedQuestionsSection"></section>
+    </main>
+    <footer>
+      <nav class="navbar">
+        <a class="navbar-item" href="./index.html">
+          <img
+            class="navbar-item__img"
+            src="./resources/home_filled.png"
+            alt="homebutton"
+            width="20"
+            height="20" />
+        </a>
+
+        <a class="navbar-item" href="./bookmark.html">
+          <img
+            class="navbar-item__img"
+            src="./resources/bookmark_filled.png"
+            alt="bookmarkpage"
+            width="20"
+            height="20" />
+        </a>
+
+        <a class="navbar-item-active" href="#">
+          <img
+            class="navbar-item__img"
+            src="./resources/plus-icon.png"
+            alt="formpage"
+            width="20"
+            height="20" />
+        </a>
+
+        <a class="navbar-item" href="./profile.html">
+          <img
+            class="navbar-item__img"
+            src="./resources/profile_filled.png"
+            alt="profilepage"
+            width="20"
+            height="20" />
+        </a>
+      </nav>
+    </footer>
+  </body>
+</html>

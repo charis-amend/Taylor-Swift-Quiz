@@ -1,0 +1,174 @@
+@import "./global.css";
+@import "./css/button.css";
+@import "./css/card.css";
+@import "./css/header.css";
+@import "./css/navbar.css";
+@import "./css/profile.css";
+@import "./css/forms.css";
+
+* {
+  margin: 0;
+  padding: 0px;
+  font-family: "Segoe UI", Tahoma, Verdana, sans-serif;
+}
+
+body {
+  background-color: var(--thirdcolorpink);
+}
+.main-content {
+  margin-inline: 10px;
+  margin-top: calc(var(--header-height) + 20px); /*height of header*/
+  margin-bottom: var(--footer-height); /*height of footer */
+  padding: 3px;
+  background-color: var(--thirdcolorpink);
+  display: flex;
+  justify-content: center;
+}
+
+.all-questioncards-section {
+  margin: 10px;
+  border: 3px;
+  background-color: var(--secondcolorlightpink);
+}
+/* 
+.main-content-profile {
+  margin-inline: 10px;
+  margin-top: calc(var(--header-height) + 30px); /*height of header*/
+/*
+  margin-bottom: var(--footer-height); /*height of footer */
+/*
+  padding: 3px;
+  background-color: var(--secondcolorlightpink);
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  }
+
+.profilehead {
+  background-color: var(--thirdcolorpink);
+  padding: 20px;
+  margin: 10px;
+  height: 80px;
+  display: flex;
+  flex-direction: row;
+}
+
+.profilehead_picture {
+  padding: 10px;
+  margin: 10px;
+  height: 100px;
+  width: 100px;
+  align-self: center;
+  object-fit: cover;
+  border: 1px;
+  border-radius: 100px;
+}
+
+.profilehead_name {
+  padding: 20px;
+  margin: 30px;
+  align-self: center;
+}
+
+.aboutme-section {
+  background-color: var(--thirdcolorpink);
+  padding: 20px;
+  margin: 10px;
+  display: flex;
+  align-items: space-between;
+  flex-direction: column;
+  justify-content: left;
+  position: relative;
+  gap: 10px;
+  box-shadow: 2px 2px 2px 2px;
+}
+
+.aboutme_title {
+  padding: 10px;
+  margin: 15px;
+}
+
+.aboutme-section__descriptiontext {
+  padding: 20px;
+  align-self: center;
+  background-color: var(--secondcolorlightpink);
+}
+
+.aboutme-section__listoffavalbums {
+  background-color: var(--secondcolorlightpink);
+  padding-left: 20px;
+  padding: 20px;
+}
+
+.aboutme-section-listoffavalbums__ol {
+  background-color: var(--secondcolorlightpink);
+  margin: 10px;
+  padding-left: 20px;
+}
+
+.stats-section,
+.settings-section {
+  background-color: var(--thirdcolorpink);
+  padding: 20px;
+  margin: 10px;
+  display: flex;
+  align-items: space-between;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  gap: 10px;
+  box-shadow: 2px 2px 2px 2px;
+}
+
+.stats-section__stats-heading,
+.settings-title {
+  padding: 10px;
+  margin: 15px;
+  width: 100vw;
+}
+
+.stats-section__questionsection,
+.stats-section__bookmarksection,
+.settings-section__darkmode-section {
+  padding: 20px;
+  background-color: var(--secondcolorlightpink);
+  display: flex;
+}
+
+.stats-section-questionsection__qicon,
+.stats-section-bookmarksection__bicon {
+  background-color: var(--secondcolorlightpink);
+  padding: 10px;
+  margin: 3px;
+  height: 20px;
+  width: 20px;
+}
+
+.stats-section-questionsection__text,
+.stats-section-bookmarksection__text,
+.settings-darkmode__text {
+  margin: 10px;
+  width: 900px;
+  align-self: center;
+}
+
+.settings-darkmode-switchbutton__area {
+  padding: 5px;
+  margin: 5px;
+  display: flex;
+}
+
+.settings-darkmode-switchbutton__switch {
+  height: 20px;
+  width: 20px;
+  padding: 5px;
+  margin: 5px;
+}
+
+.settings-darkmode-switchbutton__span {
+  height: 20px;
+  width: 20px;
+  padding: 5px;
+  margin: 5px;
+} 
+*/
