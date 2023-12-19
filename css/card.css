@@ -89,8 +89,6 @@
 .question-card__answer {
   align-self: center;
   font-size: var(--normal-textblock);
-  margin: 10px;
-  padding: 10px;
 }
 /* 
 /* js reference to show answer when button is clicked */

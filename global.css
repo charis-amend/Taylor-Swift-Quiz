@@ -6,7 +6,6 @@
   --thirdcolorpink: rgb(255, 175, 204);
   --firstinteractivecolorlightblue: rgb(189, 224, 254);
   --secondinteractivecolorstrongblue: rgb(162, 210, 255);
-  --thirdinteractivecolordarkblue: rgb(6, 64, 118);
 
   /* buttons and bookmarks styles */
   --button-color-default: var(--secondinteractivecolorstrongblue);

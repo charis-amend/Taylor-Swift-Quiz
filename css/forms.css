@@ -5,113 +5,108 @@
   padding: 3px;
   background-color: var(--secondcolorlightpink);
   display: flex;
-  flex-direction: column;
   justify-content: center;
+  flex-direction: column;
 }
 
 .lifted-shadow-section-newforms {
+  background-color: var(--thirdcolorpink);
+  padding: 20px;
   margin: 10px;
-  border: 3px;
-  background-color: var(--secondcolorlightpink);
   display: flex;
-  box-sizing: border-box;
-}
-
-.lifted-shadow-section-createdquestions {
-  margin: 10px;
-  border: 3px;
-  background-color: var(--secondcolorlightpink);
-  display: flex;
-  box-sizing: border-box;
+  align-items: space-between;
+  flex-direction: column;
+  justify-content: left;
+  position: relative;
   gap: 10px;
   box-shadow: 2px 2px 2px 2px;
 }
 
-.forms-fieldset {
-  background-color: var(--secondcolorlightpink);
-  border: 3px;
-  border-radius: 20px;
-  margin: 25px;
+.aboutme_title {
   padding: 10px;
-  width: 80vw;
-  display: flex;
-  flex-direction: column;
-  position: relative;
-  box-shadow: 1px 1px 5px;
+  margin: 15px;
 }
 
-.forms__your-question-instruction {
-  padding: 10px;
-  margin: 3px;
-  border-radius: 10px;
-  gap: 5px;
-  border: 1px black;
-  background-color: var(--firstinteractivecolorlightblue);
-  width: 400px;
-  display: flex;
-  justify-content: center;
-  box-shadow: 2px 2px 2px black;
-}
-
-.forms__text-for-input {
-  align-self: left;
-  font-size: var(--heading-medium-black);
-  margin: 3px;
-  padding: 5px;
-  margin-bottom: 0px;
-  color: rgb(111, 96, 120);
-}
-
-.forms__input-field {
-  background-color: var(--button-color-default);
-  color: var(--button-text);
-  border-radius: 2px;
-  border: 2px rgb(6, 64, 118);
-  border: 5px;
-  width: 400px;
-  align-self: left;
-  padding: 10px;
-  margin: 5px;
-  margin-top: 1px;
-  font-size: var(--heading-medium-black);
-  transition: all 400ms ease-in-out;
-}
-
-.forms__input-field:hover {
-  background-color: var(--button-color-hover);
-  color: var(--button-text);
-  box-shadow: 2px 4px 5px;
-}
-
-.characters-left-text {
-  color: var(--button-text);
-  font-size: 10px;
-  box-sizing: border-box;
-  margin: 3px;
-  margin-left: 10px;
-  margin-bottom: 20px;
-  padding: 3px;
-}
-
-.submit-button {
-  box-sizing: border-box;
-  background-color: var(--button-color-default);
-  color: var(--button-text);
-  border-radius: 2px;
-  border: 2px rgb(6, 64, 118);
-  width: 200px;
+.aboutme-section__descriptiontext {
+  padding: 20px;
   align-self: center;
-  padding: 10px;
-  margin: 1px;
-  margin-left: 30px;
-  box-shadow: 2px 5px 5px;
-  font-size: var(--heading-medium-black);
-  transition: all 200ms ease-in-out;
+  background-color: var(--secondcolorlightpink);
 }
 
-.submit-button:hover {
-  background-color: rgb(95, 167, 234);
-  color: var(--secondcolorlightpink);
-  box-shadow: 0 1px 1px 1px rgb(69, 69, 69);
-  transform: scale(0.95);
+.aboutme-section__listoffavalbums {
+  background-color: var(--secondcolorlightpink);
+  padding-left: 20px;
+  padding: 20px;
+}
+
+.aboutme-section-listoffavalbums__ol {
+  background-color: var(--secondcolorlightpink);
+  margin: 10px;
+  padding-left: 20px;
+}
+
+.stats-section,
+.settings-section {
+  background-color: var(--thirdcolorpink);
+  padding: 20px;
+  margin: 10px;
+  display: flex;
+  align-items: space-between;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  gap: 10px;
+  box-shadow: 2px 2px 2px 2px;
+}
+
+.stats-section__stats-heading,
+.settings-title {
+  padding: 10px;
+  margin: 15px;
+  width: 100vw;
+}
+
+.stats-section__questionsection,
+.stats-section__bookmarksection,
+.settings-section__darkmode-section {
+  padding: 20px;
+  background-color: var(--secondcolorlightpink);
+  display: flex;
+}
+
+.stats-section-questionsection__qicon,
+.stats-section-bookmarksection__bicon {
+  background-color: var(--secondcolorlightpink);
+  padding: 10px;
+  margin: 3px;
+  height: 20px;
+  width: 20px;
+}
+
+.stats-section-questionsection__text,
+.stats-section-bookmarksection__text,
+.settings-darkmode__text {
+  margin: 10px;
+  width: 900px;
+  align-self: center;
+}
+
+.settings-darkmode-switchbutton__area {
+  padding: 5px;
+  margin: 5px;
+  display: flex;
+}
+
+.settings-darkmode-switchbutton__switch {
+  height: 20px;
+  width: 20px;
+  padding: 5px;
+  margin: 5px;
+}
+
+.settings-darkmode-switchbutton__span {
+  height: 20px;
+  width: 20px;
+  padding: 5px;
+  margin: 5px;
 }
