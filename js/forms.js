@@ -19,17 +19,24 @@ const MAX_CHARACTERSQUESTIONINPUT = 50;
 const charactersLeftAnswerInput = document.querySelector('[data-js="answer-characters-left"]');
 const MAX_CHARACTERSANSWERINPUT = 30;
 
+// making maximum for question input field:
+questionInput.addEventListener("input", (e) => {
+    // what is being typed:
+    console.log(e.target.value.length);
+    characterLeftQuestionInput.textContent = MAX_CHARACTERSQUESTIONINPUT - parseInt(e.target
+        .value.length);
+});
+
+// maxing maximum for answer input field
+answerInput.addEventListener("input", (e) => {
+    charactersLeftAnswerInput.textContent = MAX_CHARACTERSANSWERINPUT - parseInt(e.target.value.length);
+});
+
+
 formNewCard.addEventListener("submit", (event) => {
     event.preventDefault();
 
-    // tried this-didn't work
-    // const formNewCard = new FormData(event.target);
-    // console.log("form results:", formNewCard);
-    // const dataFromInputs = Object.fromEntries(formNewCard);
-    // console.log(dataFromInputs);
 
-
-    // this works:
     const newQuestionSubmitted = document.createElement("article");
     newQuestionSubmitted.classList.add("question-card");
     // event.target.{name of the html input field}. value
@@ -70,19 +77,43 @@ formNewCard.addEventListener("submit", (event) => {
 
     newCreatedQuestionsSection.append(newQuestionSubmitted);
 
+
     //reseting value inputs:
     event.target.reset();
 
 
     // adding answer button interacitiv:
-    const answerShowHideButton = newQuestionSubmitted.querySelector('[data-js="question-card-button"]');
-    answerShowHideButton.addEventListener("click", (event) => {
-        const questionCardAnswer = document.querySelector('[data-js="question-card-answer"]');
+    const questionCardAnswer = document.querySelector('[data-js="question-card-answer"]');
+    const questionCardButtonToShowAndHideAnswer = document.querySelector('[data-js="question-card-button"]');
+
+    questionCardButtonToShowAndHideAnswer.addEventListener("click", (e) => {
+
         questionCardAnswer.hidden = !questionCardAnswer.hidden;
     });
 
-    // adding bookmark button: 
-    questionCardBookmarkButton.addEventListener("click", (e) => {
+    // here the text on the button changes depending if answer is showing or not
+    questionCardButtonToShowAndHideAnswer.addEventListener("click", (event) => {
+
+        if (questionCardButtonToShowAndHideAnswer.textContent === "SHOW ANSWER") {
+            questionCardButtonToShowAndHideAnswer.textContent = "Hide Answer";
+        }
+        else {
+            questionCardButtonToShowAndHideAnswer.textContent = "SHOW ANSWER"
+        }
+    });
+
+
+
+    // Bookmark button
+    // The user can click on the bookmark endlessly and the bookmark will toggle between both stylings
+    const questionCardBookmarkButton = newQuestionSubmitted.querySelector('[data-js="question-card-bookmark-button"]');
+    const questionCardBookmarkPicture = newQuestionSubmitted.querySelector('[data-js="question-card-bookmark-picture"]');
+
+    // make a variable for condition whether button is checked or not:
+    let questionCardBookmarked = false;
+    // make it false and unfilled by default!
+
+    questionCardBookmarkButton.addEventListener("click", (eventBookmark) => {
 
         // say that if let questionCardBookmarked is as defined above (=default/false/unfilled) then...
         if (questionCardBookmarked) {
@@ -102,18 +133,5 @@ formNewCard.addEventListener("submit", (event) => {
 
 });
 
-
-// making maximum for question input field:
-questionInput.addEventListener("input", (e) => {
-    // what is being typed:
-    console.log(e.target.value.length);
-    characterLeftQuestionInput.textContent = MAX_CHARACTERSQUESTIONINPUT - parseInt(e.target
-        .value.length);
-});
-
-// maxing maximum for answer input field
-answerInput.addEventListener("input", (e) => {
-    charactersLeftAnswerInput.textContent = MAX_CHARACTERSANSWERINPUT - parseInt(e.target.value.length);
-});
 
 
