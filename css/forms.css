@@ -73,7 +73,7 @@
   padding: 10px;
   margin: 5px;
   margin-top: 1px;
-  font-size: var(--heading-medium-black);
+  font-size: 12px;
   transition: all 400ms ease-in-out;
 }
 

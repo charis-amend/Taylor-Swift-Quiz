@@ -14,35 +14,65 @@
     </header>
     <main class="main-content-forms">
       <section class="lifted-shadow-section-newforms">
-            <form aria-labelledby="header-subtitle">
-                <fieldset class="forms-fieldset">
-                  <legend class="forms__your-question-instruction">Add a new Question about Taylor Swift here:</legend>
-                    <label for="forms__question-input" 
-                        class="forms__question-text">Your Question</label>
-                    <input type="text" 
-                        name="forms__question-input" 
-                        id="question-input" 
-                        class="forms__question-input" 
-                        data-js="question-input-js" />
-                  <label for="forms__answer-input" 
-                        class="forms__answer-text">Your Answer</label>
-                    <input type="text" 
-                        name="forms__answer-input" 
-                        id="answer-input" 
-                        class="forms__answer-input"
-                        data-js="answer-input-js"/>
-                  <label for="forms__tag-input" 
-                        class="forms__tag-text" >You can put one tag here:</label>
-                     <input type="text" 
-                        name="forms__tag-input" 
-                        id="tag-input"
-                        class="forms__tag-input"
-                        data-js="tag-input-js" />
-                    </fieldset>
-                <input type="submit" value="Add Question" 
-                class="submit-button"
-                data-js="forms-submit-button">
-            </form>
+        <form aria-labelledby="header-subtitle" data-js="formNewCard">
+          <fieldset class="forms-fieldset">
+            <legend class="forms__your-question-instruction">
+              Add a new Question about Taylor Swift here:
+            </legend>
+            <label for="forms__question-input" class="forms__text-for-input"
+              >Your Question</label
+            >
+            <input
+              type="text"
+              name="forms__questionInput"
+              id="question-input"
+              class="forms__input-field"
+              data-js="question-input-js"
+              maxlength="50"
+              placeholder="add your question here..." />
+
+            <p class="characters-left-text">
+              <span data-js="question-characters-left">50</span> characters are
+              left for your question.
+            </p>
+
+            <label for="forms__answer-input" class="forms__text-for-input"
+              >Your Answer</label
+            >
+            <input
+              type="text"
+              name="forms__answerInput"
+              id="answer-input"
+              class="forms__input-field"
+              data-js="answer-input-js"
+              maxlength="30"
+              placeholder="add your answer here..." />
+
+            <p class="characters-left-text">
+              <span data-js="answer-characters-left">30</span> characters are
+              left for your answer.
+            </p>
+
+            <label for="forms__tag-input" class="forms__text-for-input"
+              >You can put one tag here:</label
+            >
+            <input
+              type="text"
+              name="forms__tagInput"
+              id="tag-input"
+              class="forms__input-field"
+              data-js="tag-input-js" />
+          </fieldset>
+          <input
+            type="submit"
+            value="Add Question"
+            class="submit-button"
+            data-js="forms-submit-button" />
+        </form>
+      </section>
+      <section
+        class="newCreatedQuestionsSection"
+        data-js="newCreatedQuestionsSection"></section>
     </main>
     <footer>
       <nav class="navbar">
@@ -65,13 +95,13 @@
         </a>
 
         <a class="navbar-item-active" href="#">
-            <img
-              class="navbar-item__img"
-              src="./resources/plus-icon.png"
-              alt="formpage"
-              width="20"
-              height="20" />
-          </a>
+          <img
+            class="navbar-item__img"
+            src="./resources/plus-icon.png"
+            alt="formpage"
+            width="20"
+            height="20" />
+        </a>
 
         <a class="navbar-item" href="./profile.html">
           <img
@@ -82,7 +112,6 @@
             height="20" />
         </a>
       </nav>
-      
     </footer>
   </body>
 </html>
