@@ -22,7 +22,7 @@ const MAX_CHARACTERSANSWERINPUT = 30;
 formNewCard.addEventListener("submit", (event) => {
     event.preventDefault();
 
-    // tried this-didnt work
+    // tried this-didn't work
     // const formNewCard = new FormData(event.target);
     // console.log("form results:", formNewCard);
     // const dataFromInputs = Object.fromEntries(formNewCard);
@@ -82,7 +82,7 @@ formNewCard.addEventListener("submit", (event) => {
     });
 
     // adding bookmark button: 
-    questionCardBookmarkButton.addEventListener("click", (eventBookmark) => {
+    questionCardBookmarkButton.addEventListener("click", (e) => {
 
         // say that if let questionCardBookmarked is as defined above (=default/false/unfilled) then...
         if (questionCardBookmarked) {
