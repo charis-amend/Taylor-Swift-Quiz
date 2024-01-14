@@ -15,6 +15,12 @@
 body {
   background-color: var(--thirdcolorpink);
 }
+
+body.dark {
+  background-color: rgb(50, 51, 58);
+  color: white;
+}
+
 .main-content {
   margin-inline: 10px;
   margin-top: calc(var(--header-height) + 20px); /*height of header*/
@@ -23,6 +29,10 @@ body {
   background-color: var(--thirdcolorpink);
   display: flex;
   justify-content: center;
+}
+.main-content.dark {
+  background-color: rgb(50, 51, 58);
+  color: white;
 }
 
 .all-questioncards-section {

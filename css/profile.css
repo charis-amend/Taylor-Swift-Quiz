@@ -8,6 +8,10 @@
   justify-content: center;
   flex-direction: column;
 }
+.main-content-profile.dark {
+  background-color: rgb(50, 51, 58);
+  color: white;
+}
 
 .profilehead {
   background-color: var(--thirdcolorpink);
@@ -117,6 +121,26 @@
   align-self: center;
 }
 
+.darkmode-button {
+  background-color: #333; /* Dark background */
+  color: white; /* Light text */
+  border: none;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.darkmode-button:hover {
+  background-color: #555; /* Slightly lighter on hover */
+  color: white;
+}
+/* 
 .settings-darkmode-switchbutton__area {
   padding: 5px;
   margin: 5px;
@@ -135,4 +159,4 @@
   width: 20px;
   padding: 5px;
   margin: 5px;
-}
+} */
