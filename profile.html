@@ -5,13 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>profile page</title>
     <link rel="stylesheet" href="./styles.css" />
+    <script type="module" src="./js/darkmode.js" defer></script>
   </head>
-  <body>
+  <body data-js="body">
     <header class="header-bar">
       <p class="header-title">Taylor Swift Quiz</p>
       <p class="header-subtitle">PROFILE</p>
     </header>
-    <main class="main-content-profile">
+    <main class="main-content-profile" data-js="main-global">
       <section class="profilehead">
         <img
           class="profilehead_picture"
@@ -57,13 +58,11 @@
 
       <section class="settings-section">
         <h3 class="settings-title">Settings</h3>
-        <section class="settings-section__darkmode-section">
-          <label
-            class="settings-darkmode-switchbutton__area"
-            input
-            type="switch"></label>
-          <span class="settings-darkmode-switchbutton__span"></span>
-
+        <section
+          class="settings-section__darkmode-section"
+          data-js="darkmode-section">
+          <button data-js="darkmode-button" class="darkmode-button"></button>
+          <!-- adding js button here -->
           <p class="settings-darkmode__text">Dark Mode</p>
         </section>
       </section>

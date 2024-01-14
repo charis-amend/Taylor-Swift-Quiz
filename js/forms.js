@@ -1,19 +1,15 @@
 console.clear();
 
 // form creating new cards:
-//getting to the whole form
 const formNewCard = document.querySelector('[data-js="formNewCard"]');
-// getting  the inputs
 const questionInput = document.querySelector('[data-js="question-input-js"]');
 const answerInput = document.querySelector('[data-js="answer-input-js"]')
 const tagInput = document.querySelector('[data-js="tag-input-js"]')
-// and getting submit button 
 const submitButton = document.querySelector('[data-js="forms-submit-button"]');
-// getting the section where the new Questioncards go
 const newCreatedQuestionsSection = document.querySelector('[data-js="newCreatedQuestionsSection"]')
 
 
-// maximum length for form fields questioni and answer
+// maximum length for form fields question and answer
 const characterLeftQuestionInput = document.querySelector('[data-js="question-characters-left"]')
 const MAX_CHARACTERSQUESTIONINPUT = 50;
 const charactersLeftAnswerInput = document.querySelector('[data-js="answer-characters-left"]');
@@ -35,8 +31,6 @@ answerInput.addEventListener("input", (e) => {
 
 formNewCard.addEventListener("submit", (event) => {
     event.preventDefault();
-
-
     const newQuestionSubmitted = document.createElement("article");
     newQuestionSubmitted.classList.add("question-card");
     // event.target.{name of the html input field}. value
@@ -74,26 +68,21 @@ formNewCard.addEventListener("submit", (event) => {
             </ul>
           </section>
     `
-
     newCreatedQuestionsSection.append(newQuestionSubmitted);
-
 
     //reseting value inputs:
     event.target.reset();
-
 
     // adding answer button interacitiv:
     const questionCardAnswer = document.querySelector('[data-js="question-card-answer"]');
     const questionCardButtonToShowAndHideAnswer = document.querySelector('[data-js="question-card-button"]');
 
     questionCardButtonToShowAndHideAnswer.addEventListener("click", (e) => {
-
         questionCardAnswer.hidden = !questionCardAnswer.hidden;
     });
 
     // here the text on the button changes depending if answer is showing or not
     questionCardButtonToShowAndHideAnswer.addEventListener("click", (event) => {
-
         if (questionCardButtonToShowAndHideAnswer.textContent === "SHOW ANSWER") {
             questionCardButtonToShowAndHideAnswer.textContent = "Hide Answer";
         }
